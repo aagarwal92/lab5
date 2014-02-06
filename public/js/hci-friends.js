@@ -5,6 +5,11 @@ $(document).ready(function() {
 	initializePage();
 })
 
+function clickName(e)  {
+	e.preventDefault()
+	currentText = $(this).text()
+	$(this).text(anagrammedName(currentText))
+}
 /*
  * Function that is called when the document is ready.
  */
